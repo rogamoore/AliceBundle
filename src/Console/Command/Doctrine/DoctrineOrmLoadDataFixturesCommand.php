@@ -135,7 +135,7 @@ class DoctrineOrmLoadDataFixturesCommand extends Command
         $noBundles = $input->getParameterOption('--no-bundles') ?? true;
         if (!$noBundles) {
             @trigger_error(
-                'The configuration parameter hautelook.root_dirs should be used to specify the directories to include. If done or if you do not need to load bundle\'s fixtures, use the --no-bundles option',
+                'The configuration parameter hautelook_alice.root_dirs should be used to specify the directories to include. If done or if you do not need to load bundle\'s fixtures, use the --no-bundles option',
                 E_USER_DEPRECATED
             );
         }
